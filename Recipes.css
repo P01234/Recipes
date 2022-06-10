@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-y:auto;
+}
+
+.header{
+    background: url("/Recipes/RecipesImages/background-blurry-restaurant-shop-interior_1203-4031.webp") no-repeat;
+    background-clip: border-box;
+    background-size:cover;
+    height: 100vh;
+    
+    
+    
+    
+   
+}
+.mainLogo{
+    text-align:center;
+    margin: 50px;
+    background-color: wheat;
+    margin-top: 0px;
+    animation-name: animate;
+    border: 5px solid black;
+    box-shadow: 3px;
+    animation-duration: 4s;
+}
+
+@keyframes animate {
+    from {
+      background-color: white;
+      opacity: 0;
+      
+      
+    }
+    to {
+      background-color: wheat;
+      opacity:1;
+      
+     
+    }
+  }
+  .images{
+      display:flex;
+      justify-content:space-between;
+      margin: 100px;
+      align-items: center;
+      position: relative;
+      bottom: 10px;
+      animation-name: image;
+      animation-duration: 2s;
+  }
+  .images img{
+      border-radius: 10px;
+  }
+  .text{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      animation-name: text;
+      animation-duration: 2s;
+      
+  }
+  @keyframes image {
+    from {
+      
+      opacity: 0;
+      
+      
+    }
+    to {
+      opacity:1;
+      
+     
+    }
+  }
+  @keyframes text {
+    from {
+      
+      opacity: 0;
+      
+      
+    }
+    to {
+      opacity:1;
+      
+     
+    }
+  }
+  @media(max-width:910px){
+      *{
+          overflow-y:auto;
+      }
+    .images{
+        display:flex;
+        flex-direction:column;
+        margin: 100px;
+        align-items: center;
+        position: relative;
+        bottom: 10px;
+        justify-content: space-between;
+       
+    }
+    .images img{
+        border-radius: 10px;
+        
+    }
+  }
